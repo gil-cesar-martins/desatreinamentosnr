@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="painel">
+
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row">
+                <div class="col-6 p-1 pt-4 m-auto">
+                    <img class="img-fluid" src="{% static 'img/logodesa2.png' %}" alt="logodesa">
+                </div>
+            </div>
+
+            <form name="formPainel" id="formPainel" method="post" action="/dologin/">
+                <div class="col-6 p-1 pt-4 m-auto">
+                    {% if msg %}
+                        <div class="alert {{class}}">
+                            {{msg}}
+                        </div>
+                    {% endif %}
+    
+                    {% csrf_token %}
+                    <input class="form-control mt-4" type="text" name="user" id="user" placeholder="Registro do Usuário:">
+                    <input class="form-control mt-4" type="password" name="password" id="password" placeholder="Senha:">
+                    <input class="btn btn-success mt-4" type="submit" value="Entrar">
+                </div>
+            </form>
+        </div>    
+        
+        
+    </section> 
+{% endblock %}

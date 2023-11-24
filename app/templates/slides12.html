@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<section id="slides">
+    <div class="hero-image">
+        <div class="container-fluid no-padding text-white">
+            <div class="row">
+                <p>ASSISTA TODA A APRESENTAÇÃO E LEMBRE-SE SEMPRE DE PRATICAR ATOS SEGUROS!</p>
+                <div class="col-md-12">
+                    <iframe src="https://onedrive.live.com/embed?cid=F01A8C09BA1DE684&amp;resid=F01A8C09BA1DE684%212224&amp;authkey=ADpzsoJ_f6oWBJs&amp;em=2&amp;wdAr=1.7777777777777777" width="100%" height="320px" frameborder="0">Este é um apresentação do <a target="_blank" href="https://office.com">Microsoft Office</a> incorporado, da plataforma <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                    <a href="/treinamentos/" class="btn btn-danger mt-3">Voltar</a>
+                </div>
+            </div>          
+        </div>
+    </div>
+</section>  
+{% else %}
+Você não tem acesso a essa área
+{% endif %}
+{% endblock %}

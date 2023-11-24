@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% load static  %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<section id="treinamentos">
+    <div class="hero-image pt-5 pb-5">
+        <div class="container col-md-6 p-5 bg-dark text-white">
+            <h1>Treinamentos <br>DESA ENGENHARIA</h1>
+            <p>NR 33 - Espaços Confinados</p>
+            <div class="row">
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-33-atualizada-2022-_retificada.pdf" target="_blank" class="btn btn-dark-blue text-light">NR-33 em PDF</a>
+                <a href="/videos33/" target="_blank" class="btn btn-dark-blue text-light mt-3">Videos</a>          
+                <a href="/slides33/" target="_blank" class="btn btn-dark-blue text-light mt-3">Apresentação em Power Point</a>  
+                <a href="https://forms.gle/1oJRJrvCAHiN8Lbp9" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Trabalhador  - Vigia - MATRIZ</a>
+                <a href="https://forms.gle/KQroGsbcbwr4awnTA" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Supervisor - MATRIZ</a>
+                <a href="https://forms.gle/fpjZRaHzT6UbDVJS6" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Trabalhador  - Vigia - Filial ES</a>
+                <a href="https://forms.gle/JRB1RHivML7kNPE26" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Supervisor - Filial ES</a>
+                <a href="/treinamentos/" class="btn btn-danger mt-3">Sair</a>
+            </div>      
+        </div>
+    </div>
+</section>  
+{% else %}
+Você não tem acesso a essa área
+{% endif %}
+{% endblock %}

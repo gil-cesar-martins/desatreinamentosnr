@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% load static  %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<section id="treinamentos">
+    <div class="hero-image pt-5 pb-5">
+        <div class="container col-md-6 p-5 bg-dark text-white">
+            <h1>Treinamentos <br>DESA ENGENHARIA</h1>
+            <p>NR 01 - Disposições Gerais</p>
+            <p>Treinamento de Integração - NR 18 - Condições e Meio Ambiente de Trabalho na Indústria da Construção</p>
+            <div class="row">
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-01-atualizada-2022-1.pdf" target="_blank" class="btn btn-dark-blue text-light">NR-01 em PDF</a>
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-18-atualizada-2020.pdf" target="_blank" class="btn btn-dark-blue text-light mt-3">NR-18 em PDF</a>
+                <a href="/videos01/" target="_blank" class="btn btn-dark-blue text-light mt-3">Videos</a>          
+                <a href="/slides01/" target="_blank" class="btn btn-dark-blue text-light mt-3">Apresentação em Power Point</a>  
+                <a href="https://forms.gle/mFeXT2m4me6K8Aqm9" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Prova - Matriz</a>
+                <a href="https://forms.gle/t6QMiJLygXhtHJB2A" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Prova - Filial ES</a>
+                <a href="/treinamentos/" class="btn btn-danger mt-3">Sair</a>
+            </div>      
+        </div>
+
+    </div>
+</section>  
+{% else %}
+Você não tem acesso a essa área
+{% endif %}
+{% endblock %}

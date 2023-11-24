@@ -1,0 +1,152 @@
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+  .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.btn-dark-blue {
+  background: #7474BF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border: 3px solid #0000FF;
+}
+/* Cadastro Section
+------------------------*/
+#cadastro {
+   padding: 40px 0 40px 0;
+}
+
+#cadastro .section-title{
+    color: chartreuse;
+    font-size: 32px;
+}
+
+#cadastro h2{
+    color: white;
+}
+
+/* Painel Section
+------------------------*/
+#painel {
+  height: 100vh;
+  padding: 40px 0 40px 0;
+  background-color: #05445E;
+}
+
+#painel h1 {
+   text-shadow: 2px 2px 8px #202e5e;
+ }
+#painel h2{
+   color: white;
+}
+#formPainel{
+  height: max-content;
+}
+
+/* Home Section
+------------------------*/
+#home {
+  background-color: #05445E;
+  padding: 60px 40px 60px 40px;
+}
+
+#home p{
+  color: #fff;
+  text-shadow: 2px 2px 8px #202e5e, 2px 2px 5px #0000FF;
+}
+#home ul{
+  color: #fff;
+  text-shadow:2px 2px 8px #202e5e, 2px 2px 8px #000000;
+}
+
+#home h2{
+   margin-top: 40px;
+   color: white;
+   text-shadow: 0 0 3px #202e5e, 2px 2px 8px #0000FF;
+}
+
+/* Treinamentos Section
+------------------------*/
+#treinamentos-principal .hero-image {
+  background-image: url("/static/img/background.jpeg");
+  background-color: #000;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#treinamentos .hero-image {
+  background-image: url("/static/img/background.jpeg");
+  background-color: #000;
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#treinamentos h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+#treinamentos p{
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Videos Section
+------------------------*/
+#videos .hero-image {
+  background-color: #000;
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#videos h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+/*Slides Section
+------------------------*/
+#slides .hero-image {
+  background-color: #000;
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#slides h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+#slides p{
+  margin-top: 80px;
+  text-align: center;
+}
+
+#slides a.btn.btn-danger{
+  justify-content: center;
+}

@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="home">
+        <div class="container" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-md-12 m-auto">
+                    <img class="img-fluid" src="{% static 'img/logodesa2.png' %}" alt="logodesa">
+                    <h2>Seja Bem-Vindo(a)</h2>
+                    <p>Fundada em 2011, A DESA ENGENHARIA é uma empresa especializada na prestação de serviços 
+                        e Engenharia,  atuando, de forma multidisciplinar, nas seguintes especialidades técnicas:</p>
+                        <ul>
+                            <li>Construção civil;</li>
+                            <li>Revestimento Refratário;</li>
+                            <li>Montagem e Manutenção Eletromecânica;</li>
+                            <li>Caldeiraria;</li>
+                            <li>Isolamento Térmico;</li>
+                            <li>Proteção Passiva</li>
+                            <li>Andaimes (Montagem e Desmontagem).</li>
+                        </ul>
+                    <p>Em sintonia com o atendimento às necessidades atuais dos grandes clientes industriais, que  passaram a requerer desafiadores 
+                        prazos de implantação e a competente coordenação de interfaces, 
+                        a DESA se capacitou para realizar empreendimentos na modalidade EPC  (Engineering – Procurement – Construction).
+                        Esta moderna forma de contratação abrange todas as fases de implantação dos empreendimentos.</p>
+                </div>
+            </div>
+            <a href="/painel/" class="btn btn-dark mt-4">Acessar</a>
+        </div>
+        
+    </section>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<section id="videos">
+    <div class="hero-image" style="height: 100%">
+        <div class="container col-md-6 p-5 bg-dark text-white">
+            <p>ASSISTA TODOS OS VIDEOS E PAUSE-OS QUANDO TIVER DÚVIDAS</p>
+            <div class="btn-group-vertical col-12">
+                
+                <p>Pratique sempre segurança em seu trabalho e em casa.</p>
+
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/98oiiKfkiJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Pratique sempre segurança em seu trabalho e em casa.</p>
+
+                <video class="embed-responsive-item" controls muted="" preload="none" src="{% static 'video/nr18andaimes/queda.mp4' %}" type="video/mp4" width="100%"></video>
+
+                <p>Pratique sempre segurança em seu trabalho e em casa.</p>
+
+                <video class="embed-responsive-item" controls muted="" preload="none" src="{% static 'video/nr18andaimes/montagemtubular.mp4' %}" type="video/mp4" width="100%"></video>
+
+                <p>Pratique sempre segurança em seu trabalho e em casa.</p>
+
+                <video class="embed-responsive-item" controls muted="" preload="none" src="{% static 'video/nr18andaimes/conformenr18.mp4' %}" type="video/mp4" width="100%"></video>
+
+                <a href="/treinamentos/" class="btn btn-danger mt-3">Voltar</a>
+            </div>           
+        </div>
+    </div>
+</section>  
+{% else %}
+Você não tem acesso a essa área
+{% endif %}
+{% endblock %}

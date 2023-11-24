@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% load static  %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<section id="treinamentos-principal">
+    <div class="hero-image pt-5 pb-5">
+        <div class="container col-md-6 p-5 bg-dark text-white">
+            <h1>Treinamentos <br>DESA Engenharia</h1>
+            <p>Escolha a NR:</p>
+            <div class="row">
+                <a href="/treinamentos01/" target="" class="btn btn-dark-blue text-light">NR 01 - Disposições Gerais</a>
+                <a href="/treinamentos06/" target="" class="btn btn-dark-blue text-light mt-3">NR 06 - Equipamentos de Proteção Individual</a>
+                <a href="/treinamentos12/" target="" class="btn btn-dark-blue text-light mt-3">NR 12 - Segurança do Trabalho em Máquinas e Equipamentos</a>
+                <a href="/treinamentos18-andaimes/" target="" class="btn btn-dark-blue text-light mt-3">NR 18 - Condições e Meio Ambiente de Trabalho na Indústria da Construção - Andaimes</a>
+                <a href="/treinamentos18-soldagem/" target="" class="btn btn-dark-blue text-light mt-3">NRs 18 & 34 - Condições e Meio Ambiente de Trabalho na Indústria da Construção - Trabalho a Quente</a>
+                <a href="/treinamentos20/" target="" class="btn btn-dark-blue text-light mt-3">NR 20 - Segurança e Saúde no Trabalho com Inflamáveis e Combustíveis</a>
+                <a href="/treinamentos33/" target="" class="btn btn-dark-blue text-light mt-3">NR 33 - Espaço Confinado</a>
+                <a href="/treinamentos35/" target="" class="btn btn-dark-blue text-light mt-3">NR 35 - Trabalho em Altura</a>
+                <a href="/logouts/" class="btn btn-danger mt-3">Sair</a>
+            </div>      
+        </div>
+    </div>
+</section>  
+{% else %}
+Você não tem acesso a essa área
+{% endif %}
+{% endblock %}

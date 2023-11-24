@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% load static  %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<section id="treinamentos">
+    <div class="hero-image pt-5 pb-5">
+        <div class="container col-md-6 p-5 bg-dark text-white">
+            <h1>Treinamentos <br>DESA ENGENHARIA</h1>
+            <p>NR 35 - Trabalho em Altura</p>
+            <div class="row">
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-35-atualizada-2022-4-1-3.pdf" target="_blank" class="btn btn-dark-blue text-light">NR-35 em PDF</a>
+                <a href="/videos35/" target="_blank" class="btn btn-dark-blue text-light mt-3">Videos</a>          
+                <a href="/slides35/" target="_blank" class="btn btn-dark-blue text-light mt-3">Apresentação em Power Point</a>  
+                <a href="https://forms.gle/kPXFoop48ZEQZZ1X6" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Prova - Matriz</a>
+                <a href="https://forms.gle/WSC8sysowugJ5XNM9" target="_blank" class="btn btn-dark-blue text-light mt-3">Avaliação / Prova - Filial ES</a>
+                <a href="/treinamentos/" class="btn btn-danger mt-3">Sair</a>
+            </div>      
+        </div>
+    </div>
+</section>  
+{% else %}
+Você não tem acesso a essa área
+{% endif %}
+{% endblock %}
